@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 let productionTime = 900000; // default production time in milliseconds (15 minutes)
 
 // RabbitMQ setup
-const rabbitMqUrl = 'amqp://localhost';
+const rabbitMqUrl = 'amqp://host.docker.internal';
 const carQueue = 'car_requests';
 const partQueue = 'part_requests';
 const productionQueue = 'production_finished';
